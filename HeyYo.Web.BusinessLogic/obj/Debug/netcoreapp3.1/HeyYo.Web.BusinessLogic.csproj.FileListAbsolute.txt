@@ -1,0 +1,14 @@
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.deps.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.Repository.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.Repository.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.csproj.CopyComplete
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.BusinessLogic\obj\Debug\netcoreapp3.1\HeyYo.Web.BusinessLogic.pdb

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeyYo.Web.BusinessLogic\HeyYo.Web.BusinessLogic.csproj" />
+    <ProjectReference Include="..\HeyYo.Web.DataAccess\HeyYo.Web.DataAccess.csproj" />
+    <ProjectReference Include="..\HeyYo.Web.Repository\HeyYo.Web.Repository.csproj" />
+  </ItemGroup>
+
+
+</Project>

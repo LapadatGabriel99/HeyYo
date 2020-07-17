@@ -1,0 +1,12 @@
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.deps.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.csprojAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.runtimeconfig.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.runtimeconfig.dev.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.genruntimeconfig.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.DataAccess\obj\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.csproj.CoreCompileInputs.cache

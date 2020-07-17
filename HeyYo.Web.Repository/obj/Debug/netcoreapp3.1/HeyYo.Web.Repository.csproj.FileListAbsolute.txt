@@ -1,0 +1,12 @@
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\bin\Debug\netcoreapp3.1\HeyYo.Web.Repository.deps.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\bin\Debug\netcoreapp3.1\HeyYo.Web.Repository.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\bin\Debug\netcoreapp3.1\HeyYo.Web.Repository.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\bin\Debug\netcoreapp3.1\HeyYo.Web.DataAccess.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.csprojAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.csproj.CopyComplete
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Repository\obj\Debug\netcoreapp3.1\HeyYo.Web.Repository.pdb
