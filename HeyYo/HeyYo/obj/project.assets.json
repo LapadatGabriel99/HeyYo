@@ -1185,6 +1185,16 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "HeyYo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HeyYo.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HeyYo.Core.dll": {}
+        }
       }
     }
   },
@@ -4848,10 +4858,16 @@
         "xamarin.forms.4.7.0.1142.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "HeyYo.Core/1.0.0": {
+      "type": "project",
+      "path": "../../HeyYo.Core/HeyYo.Core.csproj",
+      "msbuildProject": "../../HeyYo.Core/HeyYo.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "HeyYo.Core >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
       "ReactiveUI.Validation >= 1.4.15",
@@ -4896,7 +4912,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Gabriel\\Documents\\Visual Studio 2019\\Projects\\HeyYo\\HeyYo.Core\\HeyYo.Core.csproj": {
+              "projectPath": "C:\\Users\\Gabriel\\Documents\\Visual Studio 2019\\Projects\\HeyYo\\HeyYo.Core\\HeyYo.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

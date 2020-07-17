@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "HeyYo/1.0.0": {
         "dependencies": {
+          "HeyYo.Core": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
           "ReactiveUI.Validation": "1.4.15",
@@ -847,6 +848,11 @@
             "fileVersion": "4.7.0.463"
           }
         }
+      },
+      "HeyYo.Core/1.0.0": {
+        "runtime": {
+          "HeyYo.Core.dll": {}
+        }
       }
     }
   },
@@ -1415,6 +1421,11 @@
       "sha512": "sha512-P/o+VzmgeoFJZ2WoRiar/w0RmkR9WvwAEx6j891Bf31psPjSYjfTI8tGLczFa8LDqdv63pGQNH4hnBoxJjivzg==",
       "path": "xamarin.forms/4.7.0.1142",
       "hashPath": "xamarin.forms.4.7.0.1142.nupkg.sha512"
+    },
+    "HeyYo.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -985,6 +985,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HeyYo.Core": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "ReactiveUI.Validation": "1.4.15",
           "ReactiveUI.XamForms": "11.4.17",
@@ -999,6 +1000,16 @@
         },
         "runtime": {
           "bin/placeholder/HeyYo.dll": {}
+        }
+      },
+      "HeyYo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HeyYo.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HeyYo.Core.dll": {}
         }
       }
     }
@@ -2588,6 +2599,11 @@
       "type": "project",
       "path": "../HeyYo/HeyYo.csproj",
       "msbuildProject": "../HeyYo/HeyYo.csproj"
+    },
+    "HeyYo.Core/1.0.0": {
+      "type": "project",
+      "path": "../../HeyYo.Core/HeyYo.Core.csproj",
+      "msbuildProject": "../../HeyYo.Core/HeyYo.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {

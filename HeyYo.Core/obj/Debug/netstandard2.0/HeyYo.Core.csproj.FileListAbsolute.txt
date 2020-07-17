@@ -1,0 +1,9 @@
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\bin\Debug\netstandard2.0\HeyYo.Core.deps.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\bin\Debug\netstandard2.0\HeyYo.Core.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\bin\Debug\netstandard2.0\HeyYo.Core.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.csprojAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.pdb
