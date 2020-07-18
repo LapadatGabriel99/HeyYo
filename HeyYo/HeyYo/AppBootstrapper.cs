@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json.Bson;
+﻿using HeyYo.Extensions;
+using HeyYo.Pages;
+using HeyYo.ViewModels;
+using Newtonsoft.Json.Bson;
 using ReactiveUI;
 using ReactiveUI.XamForms;
 using Splat;
@@ -17,6 +20,8 @@ namespace HeyYo
             RegisterScreen();
             RegisterServices();
             RegisterViewsWithViewModels();
+
+            Router.Navigate.Execute(new MainViewModel());
         }
 
         private void RegisterServices()
@@ -26,7 +31,9 @@ namespace HeyYo
 
         private void RegisterViewsWithViewModels()
         {
-
+            Locator.CurrentMutable.Register(() => new MainPage().WithoutNavBar(), typeof(IViewFor<MainViewModel>));
+            Locator.CurrentMutable.Register(() => new LoginPage().WithoutNavBar(), typeof(IViewFor<LoginViewModel>));
+            Locator.CurrentMutable.Register(() => new RegisterPage().WithoutNavBar(), typeof(IViewFor<RegisterViewModel>));
         }
 
         private void RegisterScreen()

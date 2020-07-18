@@ -11,7 +11,7 @@ namespace HeyYo
     {
         public MainPage()
         {
-            BindingContext = ViewModel = new MainViewModel();
+            BindingContext = ViewModel;
 
             InitializeComponent();
         }

@@ -9,7 +9,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="HeyYo.MainPage">
-
     <Grid>
 
         <Grid.RowDefinitions>
@@ -26,31 +25,50 @@
                    FontSize="Large"/>
         </Frame>
 
-        <StackLayout Grid.Row="1" Margin="0, 50, 0, 0">
+        <StackLayout Grid.Row="1"
+                     VerticalOptions="Center"
+                     >
 
-            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue">
-                <StackLayout>
-                    <Entry Placeholder="Username" TextColor="Black" 
-                           Margin="5, 5, 5, 15"/>
-                    <Entry Placeholder="Password" TextColor="Black"
-                           IsPassword="True"
-                           Margin="5, 5, 5, 15"/>
+            <Label Text="Welcome..."
+                   FontSize="Large"
+                   TextColor="DodgerBlue"
+                   Margin="10, 10, 50, 130"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
 
-                    <Button CornerRadius="10" Text="Login"
-                            BackgroundColor="DodgerBlue"
-                            TextColor="GhostWhite"
-                            Margin="10, 20, 10, 5"
-                            FontSize="Medium"
-                            />
-                </StackLayout>
-            </Frame>
-            
-            <!-- Place new controls here -->
-            <Label Text="Welcome to Xamarin.Forms!" 
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"/>
+            <Label Text="Create a free account..."
+                   FontSize="Large"
+                   TextColor="DodgerBlue"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   />
+
+            <Button Text="Sign Up" Command="{Binding GoToRegisterCommand}"
+                CornerRadius="10"
+                BackgroundColor="DodgerBlue"
+                TextColor="GhostWhite"
+                FontSize="Large"
+                Margin="50, 10, 50, 50"
+                VerticalOptions="Center"
+                />
+
+            <Label Text="Or, I already have an account..."
+                   FontSize="Large"
+                   TextColor="DodgerBlue"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   />
+
+            <Button Text="Sign In" Command="{Binding GoToLoginCommand}"
+                CornerRadius="10"
+                BackgroundColor="DodgerBlue"
+                TextColor="GhostWhite"
+                FontSize="Large"
+                Margin="50, 10, 50, 50"
+                VerticalOptions="Center"/>
+
         </StackLayout>
-        
     </Grid>
-
 </reactiveui:ReactiveContentPage>
