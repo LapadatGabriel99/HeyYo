@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d"
+                    >
+    <Color x:Key="BackgroundLight">#efefef</Color>
+
+    <Color x:Key="BackgroundVeryLight">#fafafa</Color>
+
+    <Color x:Key="ForegroundMain">#686868</Color>
+
+    <Color x:Key="ForegroundVeryDark">#000000</Color>
+
+    <Color x:Key="ForegroundLight">#ffffff</Color>
+
+    <Color x:Key="ForegroundDark">#bdbdbd</Color>
+
+    <Color x:Key="ForegroundLightDark">#F2F3F5</Color>
+
+    <Color x:Key="WordBlue">#3099c5</Color>
+
+    <Color x:Key="WordTransparentBlue">#003099c5</Color>
+
+    <Color x:Key="WordLightBlue">#45b6e5</Color>
+
+    <Color x:Key="WordAlmostVeryLightBlue">#c3e5f3</Color>
+
+    <Color x:Key="WordVeryLightBlue">#ecf6fb</Color>
+
+    <Color x:Key="WordDarkBlue">#0c6991</Color>
+
+    <Color x:Key="WordOrange">#ffa800</Color>
+
+    <Color x:Key="WordGreen">#00c541</Color>
+
+    <Color x:Key="WordDarkGreen">#009631</Color>
+
+    <Color x:Key="WordRed">#ff4747</Color>
+
+    <Color x:Key="WordDarkRed">#ec0000</Color>
+</ResourceDictionary>
