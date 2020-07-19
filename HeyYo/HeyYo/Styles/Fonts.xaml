@@ -6,22 +6,22 @@
                     mc:Ignorable="d"
                     >
     <!-- Custom Font Families -->
-    <OnPlatform x:TypeArguments="x:String" x:Key="Quicksand-Light">
+    <OnPlatform x:TypeArguments="x:String" x:Key="QuicksandLight">
         <On Platform="Android" Value="Quicksand-Light.ttf#Quick Sand"/>
     </OnPlatform>
-    <OnPlatform x:TypeArguments="x:String" x:Key="Quicksand-Regular">
+    <OnPlatform x:TypeArguments="x:String" x:Key="QuicksandRegular">
         <On Platform="Android" Value="Quicksand-Regular.ttf#Quick Sand"/>
     </OnPlatform>
-    <OnPlatform x:TypeArguments="x:String" x:Key="Quicksand-Medium">
+    <OnPlatform x:TypeArguments="x:String" x:Key="QuicksandMedium">
         <On Platform="Android" Value="Quicksand-Medium.ttf#Quick Sand"/>
     </OnPlatform>
-    <OnPlatform x:TypeArguments="x:String" x:Key="Quicksand-SemiBold">
+    <OnPlatform x:TypeArguments="x:String" x:Key="QuicksandSemiBold">
         <On Platform="Android" Value="Quicksand-SemiBold.ttf#Quick Sand"/>
     </OnPlatform>
-    <OnPlatform x:TypeArguments="x:String" x:Key="Quicksand-Bold">
+    <OnPlatform x:TypeArguments="x:String" x:Key="QuicksandBold">
         <On Platform="Android" Value="Quicksand-Bold.ttf#Quick Sand"/>
     </OnPlatform>
-    <OnPlatform x:TypeArguments="x:String" x:Key="Font-Awesome">
+    <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesome">
         <On Platform="Android" Value="fontawesome-webfont.ttf#Font Awesome"/>
     </OnPlatform>
 
@@ -33,6 +33,7 @@
     <x:Double x:Key="FontSizeLarge">20</x:Double>
     <x:Double x:Key="FontSizeXLarge">24</x:Double>
     <x:Double x:Key="FontSizeXXLarge">30</x:Double>
+    <x:Double x:Key="FontSizeXXXLarge">34</x:Double>
     
     <!-- Font Awesome Icons -->
     <x:String x:Key="FontAwesomeChatIcon">&#xf086;</x:String>
@@ -47,4 +48,22 @@
     <x:String x:Key="FontAwesomeArrowLeftIcon">&#xf086;</x:String>
     <x:String x:Key="FontAwesomeTickIcon">&#xf086;</x:String>
     <x:String x:Key="FontAwesomeCloseIcon">&#xf086;</x:String>
+
+    <!-- Base styles for various controls -->
+    <Style x:Key="BaseStyleButton" TargetType="Button" BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandMedium}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}"/>
+    </Style>
+    <Style x:Key="BaseStyleLabel" TargetType="Label" BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandRegular}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+    </Style>
+    <Style x:Key="BaseStyleEntry" TargetType="Entry" BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandRegular}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+    </Style>
+    <Style x:Key="BaseStyleListView" TargetType="ListView" BasedOn="{StaticResource BaseStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+    </Style>
 </ResourceDictionary>

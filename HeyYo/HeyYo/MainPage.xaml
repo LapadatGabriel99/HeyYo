@@ -22,8 +22,9 @@
                BackgroundColor="DodgerBlue">
             <Label Text="{Binding Title}" VerticalOptions="Center"
                    HorizontalOptions="Center" TextColor="GhostWhite"                   
-                   FontFamily="{StaticResource Quicksand-Bold}"
-                   FontSize="{StaticResource FontSizeXXLarge}"/>
+                   FontFamily="{StaticResource QuicksandBold}"
+                   FontSize="{StaticResource FontSizeXXLarge}"
+                   />
         </Frame>
 
         <StackLayout Grid.Row="1"
@@ -31,11 +32,22 @@
                      >
 
             <Label Text="Welcome..."
-                   FontSize="Large"
+                   FontSize="{StaticResource FontSizeXXXLarge}"
                    TextColor="DodgerBlue"
-                   Margin="10, 10, 50, 130"
+                   Margin="10, 10, 50, 50"
                    VerticalOptions="Center"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center"
+                   Style="{StaticResource BaseStyleLabel}"
+                   FontFamily="{StaticResource QuicksandSemiBold}"/>
+
+            <Label Text="Let's begin..."
+                   FontSize="{StaticResource FontSizeXXLarge}"
+                   TextColor="DodgerBlue"
+                   Margin="10, 10, 30, 50"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Style="{StaticResource BaseStyleLabel}"
+                   FontFamily="{StaticResource QuicksandMedium}"/>
 
             <Label Text="Create a free account..."
                    FontSize="Large"
@@ -43,7 +55,8 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                    Margin="20"
-                   />
+                   Style="{StaticResource BaseStyleLabel}"
+                   FontFamily="{StaticResource QuicksandMedium}"/>
 
             <Button Text="Sign Up" Command="{Binding GoToRegisterCommand}"
                 CornerRadius="10"
@@ -52,7 +65,8 @@
                 FontSize="Large"
                 Margin="50, 10, 50, 50"
                 VerticalOptions="Center"
-                />
+                Style="{StaticResource BaseStyleButton}"
+                FontFamily="{StaticResource QuicksandMedium}"/>
 
             <Label Text="Or, I already have an account..."
                    FontSize="Large"
@@ -60,7 +74,8 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                    Margin="20"
-                   />
+                   Style="{StaticResource BaseStyleLabel}"
+                   FontFamily="{StaticResource QuicksandMedium}"/>
 
             <Button Text="Sign In" Command="{Binding GoToLoginCommand}"
                 CornerRadius="10"
@@ -68,7 +83,9 @@
                 TextColor="GhostWhite"
                 FontSize="Large"
                 Margin="50, 10, 50, 50"
-                VerticalOptions="Center"/>
+                VerticalOptions="Center"
+                Style="{StaticResource BaseStyleButton}"
+                FontFamily="{StaticResource QuicksandMedium}"/>
 
         </StackLayout>
     </Grid>
