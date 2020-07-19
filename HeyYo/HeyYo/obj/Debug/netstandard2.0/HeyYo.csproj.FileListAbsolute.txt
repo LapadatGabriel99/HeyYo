@@ -18,3 +18,4 @@ C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo\obj\Deb
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo\obj\Debug\netstandard2.0\ref\HeyYo.dll
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo\obj\Debug\netstandard2.0\HeyYo.pdb
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo\obj\Debug\netstandard2.0\Styles\Colors.xaml.g.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo\obj\Debug\netstandard2.0\Styles\Fonts.xaml.g.cs

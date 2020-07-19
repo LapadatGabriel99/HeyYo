@@ -21,8 +21,9 @@
                Grid.Row="0"
                BackgroundColor="DodgerBlue">
             <Label Text="{Binding Title}" VerticalOptions="Center"
-                   HorizontalOptions="Center" TextColor="GhostWhite"
-                   FontSize="Large"/>
+                   HorizontalOptions="Center" TextColor="GhostWhite"                   
+                   FontFamily="{StaticResource Quicksand-Bold}"
+                   FontSize="{StaticResource FontSizeXXLarge}"/>
         </Frame>
 
         <StackLayout Grid.Row="1"

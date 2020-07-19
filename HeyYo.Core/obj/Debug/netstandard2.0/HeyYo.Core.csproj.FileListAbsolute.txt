@@ -6,3 +6,4 @@ C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debu
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.dll
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Core\obj\Debug\netstandard2.0\HeyYo.Core.csprojAssemblyReference.cache
