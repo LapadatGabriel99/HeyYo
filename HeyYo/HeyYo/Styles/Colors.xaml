@@ -40,4 +40,12 @@
     <Color x:Key="WordRed">#ff4747</Color>
 
     <Color x:Key="WordDarkRed">#ec0000</Color>
+
+    <Color x:Key="HeyYoMainWhite">#f8f8ff</Color>
+
+    <Color x:Key="HeyYoMainBlue">#1e90ff</Color>
+
+    <Color x:Key="HeyYoMainDarkBlue">#0074e4</Color>
+
+    <Color x:Key="HeyYoMainLesserBlue">#3490e9</Color>
 </ResourceDictionary>

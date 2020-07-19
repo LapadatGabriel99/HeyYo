@@ -20,39 +20,39 @@
                HasShadow="True"               
                Grid.Row="0"
                BackgroundColor="DodgerBlue">
-            <Label Text="{Binding Title}" VerticalOptions="Center"
-                   HorizontalOptions="Center" TextColor="GhostWhite"
-                   FontSize="Large"/>
+            <Label Text="{Binding Title}" 
+                   Style="{StaticResource PageHeaderLabel}"/>
         </Frame>
 
         <StackLayout Grid.Row="1" Margin="0, 50, 0, 0">
 
-            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue">
+            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue"
+                   CornerRadius="10">
                 <StackLayout>
                     <Entry Placeholder="Username" TextColor="Black" 
-                           Margin="5, 5, 5, 15"/>
+                           Margin="5, 5, 5, 15"
+                           FontSize="{StaticResource FontSizeLarge}"
+                           FontFamily="{StaticResource QuicksandMedium}"/>
                     <Entry Placeholder="Password" TextColor="Black"
                            IsPassword="True"
-                           Margin="5, 5, 5, 15"/>
+                           Margin="5, 5, 5, 15"
+                           FontSize="{StaticResource FontSizeLarge}"
+                           FontFamily="{StaticResource QuicksandMedium}"/>
 
                     <Button CornerRadius="10" Text="Sign In"
                             BackgroundColor="DodgerBlue"
                             TextColor="GhostWhite"
                             Margin="15, 40, 15, 5"
                             FontSize="Medium"
-                            />
+                            Style="{StaticResource BaseStyleButton}"/>
                 </StackLayout>
             </Frame>
             
         </StackLayout>
 
-        <Label  Text="Or, create a free account..."
-                FontSize="Large"
-                TextColor="DodgerBlue"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
+        <Label  Text="Or, create a free account..."                
                 Margin="20, 0, 20, 150" Grid.Row="2"
-                >
+                Style="{StaticResource FormInputLabel}">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding GoToRegisterCommand}"/>
             </Label.GestureRecognizers>

@@ -12,6 +12,6 @@ namespace HeyYo.Pages
             BindingContext = ViewModel;
 
             InitializeComponent();
-        }
+        }     
     }
 }

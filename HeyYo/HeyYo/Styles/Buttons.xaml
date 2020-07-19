@@ -5,5 +5,12 @@
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     mc:Ignorable="d"
                     >
-    
+    <!-- Regular Button -->
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyleButton}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXLarge}"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource HeyYoMainDarkBlue}"/>
+        <Setter Property="TextColor" Value="{StaticResource HeyYoMainWhite}"/>
+        <Setter Property="Margin" Value="0, 10"/>
+    </Style>
 </ResourceDictionary>

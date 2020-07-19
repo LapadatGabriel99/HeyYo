@@ -5,5 +5,34 @@
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     mc:Ignorable="d"
                     >
+    <!-- Form Input Label -->
+    <Style x:Key="FormInputLabel" TargetType="{x:Type Label}" BasedOn="{StaticResource BaseStyleLabel}">
+        <Setter Property="Margin" Value="0, 10"/>
+        <Setter Property="TextColor" Value="{StaticResource HeyYoMainBlue}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXLarge}"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+    </Style>
+    
+    <!-- Page Base Label -->
+    <Style x:Key="PageBaseLabel" TargetType="{x:Type Label}">
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="{StaticResource HeyYoMainWhite}"/>
+        <Setter Property="Margin" Value="0, 10"/>
+    </Style>
+    
+    <!-- Page Header Label -->
+    <Style x:Key="PageHeaderLabel" TargetType="{x:Type Label}" BasedOn="{StaticResource PageBaseLabel}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXXLarge}"/>
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandBold}"/>
+    </Style>
+    
+    <!-- Page Title Label -->
+    <Style x:Key="PageHeaderTitle" TargetType="{x:Type Label}" BasedOn="{StaticResource PageBaseLabel}">
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandSemiBold}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeXXXLarge}"/>
+        <Setter Property="TextColor" Value="{StaticResource HeyYoMainBlue}"/>
+    </Style>
     
 </ResourceDictionary>
