@@ -8,7 +8,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"             
-             x:Class="HeyYo.MainPage">
+             x:Class="HeyYo.MainPage"
+             Appearing="ReactiveContentPage_Appearing">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -20,7 +21,7 @@
                HasShadow="True"               
                Grid.Row="0"
                BackgroundColor="DodgerBlue">
-            <Label Text="{Binding Title}" 
+            <Label Text="{Binding Header}" 
                    Style="{StaticResource PageHeaderLabel}"/>
         </Frame>
 
@@ -28,10 +29,12 @@
                      VerticalOptions="Center"
                      >
 
-            <Label Text="Welcome..."                                      
+            <Label Text="{Binding Title}"                                      
                    Margin="10, 10, 50, 50"                  
                    Style="{StaticResource PageHeaderTitle}"
-                   FontFamily="{StaticResource QuicksandSemiBold}"/>
+                   FontFamily="{StaticResource QuicksandSemiBold}"
+                   x:Name="Title"
+                   Opacity="0"/>
 
             <Label Text="Let's begin..."
                    FontSize="{StaticResource FontSizeXXLarge}"
@@ -42,22 +45,22 @@
                    Style="{StaticResource BaseStyleLabel}"
                    FontFamily="{StaticResource QuicksandMedium}"/>
 
-            <Label Text="Create a free account..."                                                        
+            <Label Text="{Binding RegisterLabelText}"                                                        
                    Margin="20, 10, 20, 10"
                    Style="{StaticResource FormInputLabel}"
                    />
 
-            <Button Text="Register" Command="{Binding GoToRegisterCommand}"                
+            <Button Text="{Binding RegisterButtonText}" Command="{Binding GoToRegisterCommand}"                
                     Margin="50, 10, 50, 50"
                     VerticalOptions="Center"
                     />
 
-            <Label Text="Or, I already have an account..."                   
+            <Label Text="{Binding LoginLabelText}"                   
                    Margin="20, 10, 20, 10"
                    Style="{StaticResource FormInputLabel}"
                    />
 
-            <Button Text="Login" Command="{Binding GoToLoginCommand}"                
+            <Button Text="{Binding LoginButtonText}" Command="{Binding GoToLoginCommand}"                
                     Margin="50, 10, 50, 50"
                     VerticalOptions="Center"                
                     />

@@ -20,7 +20,7 @@
                HasShadow="True"               
                Grid.Row="0"
                BackgroundColor="DodgerBlue">
-            <Label Text="{Binding Title}" 
+            <Label Text="{Binding Header}" 
                    Style="{StaticResource PageHeaderLabel}"/>
         </Frame>
 
@@ -39,7 +39,7 @@
                            FontSize="{StaticResource FontSizeLarge}"
                            FontFamily="{StaticResource QuicksandMedium}"/>
 
-                    <Button CornerRadius="10" Text="Sign In"
+                    <Button CornerRadius="10" Text="{Binding FormButtonText}"
                             BackgroundColor="DodgerBlue"
                             TextColor="GhostWhite"
                             Margin="15, 40, 15, 5"
@@ -50,7 +50,7 @@
             
         </StackLayout>
 
-        <Label  Text="Or, create a free account..."                
+        <Label  Text="{Binding FormLabelText}"                
                 Margin="20, 0, 20, 150" Grid.Row="2"
                 Style="{StaticResource FormInputLabel}">
             <Label.GestureRecognizers>

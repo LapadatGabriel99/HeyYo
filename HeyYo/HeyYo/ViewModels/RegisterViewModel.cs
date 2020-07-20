@@ -7,15 +7,37 @@ namespace HeyYo.ViewModels
 {
     public class RegisterViewModel : ReactiveObject, IRoutableViewModel
     {
-        private string _title;
+        private string _header;
 
-        public string Title
+        public string Header
         {
-            get => _title;
+            get => _header;
 
             set
             {
-                this.RaiseAndSetIfChanged(ref _title, value);
+                this.RaiseAndSetIfChanged(ref _header, value);
+            }
+        }
+
+        private string _formButtonText;
+
+        public string FormButtonText
+        {
+            get => _formButtonText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _formButtonText, value);
+            }
+        }
+
+        private string _formLabelText;
+
+        public string FormLabelText
+        {
+            get => _formLabelText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _formLabelText, value);
             }
         }
 
@@ -29,12 +51,21 @@ namespace HeyYo.ViewModels
         {
             HostScreen = screen ?? Locator.Current.GetService<IScreen>();
 
-            Title = TextNormalization.RegisterPageTitle;
+            InitiateViewText();
 
             GoToLoginCommand = ReactiveCommand.CreateFromObservable(() =>
             {
                 return HostScreen.Router.Navigate.Execute(new LoginViewModel());
             });
+        }
+
+        private void InitiateViewText()
+        {
+            Header = TextNormalization.RegisterPageHeader;
+
+            FormButtonText = TextNormalization.RegisterPageHeader;
+
+            FormLabelText = TextNormalization.RegisterPageFormLabel;
         }
     }
 }

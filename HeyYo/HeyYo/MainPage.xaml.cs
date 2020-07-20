@@ -1,6 +1,7 @@
 ﻿using HeyYo.ViewModels;
 using ReactiveUI.XamForms;
 using System.ComponentModel;
+using Xamarin.Forms;
 
 namespace HeyYo
 {
@@ -14,6 +15,11 @@ namespace HeyYo
             BindingContext = ViewModel;
 
             InitializeComponent();
+        }
+
+        private async void ReactiveContentPage_Appearing(object sender, System.EventArgs e)
+        {
+            await Title.FadeTo(1, 2000, easing: Easing.SpringIn);
         }
     }
 }

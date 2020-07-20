@@ -7,6 +7,17 @@ namespace HeyYo.ViewModels
 {
     public class MainViewModel : ReactiveObject, IRoutableViewModel
     {
+        private string _header;
+
+        public string Header
+        {
+            get => _header;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _header, value);
+            }
+        }
+
         private string _title;
 
         public string Title
@@ -15,6 +26,50 @@ namespace HeyYo.ViewModels
             set
             {
                 this.RaiseAndSetIfChanged(ref _title, value);
+            }
+        }
+
+        public string _registerLabelText;
+
+        public string RegisterLabelText
+        {
+            get => _registerLabelText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _registerLabelText, value);
+            }
+        }
+
+        public string _registerButtonText;
+
+        public string RegisterButtonText
+        {
+            get => _registerButtonText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _registerButtonText, value);
+            }
+        }
+
+        public string _loginLabelText;
+
+        public string LoginLabelText
+        {
+            get => _loginLabelText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _loginLabelText, value);
+            }
+        }
+
+        public string _loginButtonText;
+
+        public string LoginButtonText
+        {
+            get => _loginButtonText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _loginButtonText, value);
             }
         }
 
@@ -30,7 +85,7 @@ namespace HeyYo.ViewModels
         {
             HostScreen = screen ?? Locator.Current.GetService<IScreen>();
 
-            Title = TextNormalization.MainPageTitle;
+            InitiateViewText();
 
             GoToRegisterCommand = ReactiveCommand.CreateFromObservable(() =>
             {
@@ -41,6 +96,21 @@ namespace HeyYo.ViewModels
             {
                 return HostScreen.Router.Navigate.Execute(new LoginViewModel());
             });
+        }
+
+        private void InitiateViewText()
+        {
+            Header = TextNormalization.MainPageHeader;
+
+            Title = TextNormalization.MainPageTitle;
+
+            RegisterLabelText = TextNormalization.MainPageRegisterLabel;
+
+            RegisterButtonText = TextNormalization.MainPageRegisterButton;
+
+            LoginLabelText = TextNormalization.MainPageLoginLabel;
+
+            LoginButtonText = TextNormalization.MainPageLoginButton;
         }
     }
 }
