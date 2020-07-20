@@ -6,6 +6,8 @@
 
         public const string MainPageTitle = "Welcome...";
 
+        public const string MainPageAlternativeTitle = "Let's begin...";
+
         public const string MainPageRegisterButton = "Register";
 
         public const string MainPageLoginButton = "Register";

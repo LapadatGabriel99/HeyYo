@@ -2,7 +2,8 @@
 <reactiveui:ReactiveContentPage
              x:TypeArguments="viewModel:MainViewModel"
              xmlns:viewModel="clr-namespace:HeyYo.ViewModels"
-             xmlns:reactiveui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"             
+             xmlns:reactiveui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms" 
+             xmlns:attachedProperty="clr-namespace:HeyYo.AttachedProperties"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -29,12 +30,13 @@
                      VerticalOptions="Center"
                      >
 
-            <Label Text="{Binding Title}"                                      
+            <Label Text="{Binding Title, Mode=OneWay}"                                      
                    Margin="10, 10, 50, 50"                  
                    Style="{StaticResource PageHeaderTitle}"
                    FontFamily="{StaticResource QuicksandSemiBold}"
                    x:Name="Title"
-                   Opacity="0"/>
+                   Opacity="0"
+                   attachedProperty:AnimateTitleProperty.Value="{Binding TitleShouldAnimate}"/>
 
             <Label Text="Let's begin..."
                    FontSize="{StaticResource FontSizeXXLarge}"
@@ -43,7 +45,11 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                    Style="{StaticResource BaseStyleLabel}"
-                   FontFamily="{StaticResource QuicksandMedium}"/>
+                   FontFamily="{StaticResource QuicksandMedium}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TestCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
 
             <Label Text="{Binding RegisterLabelText}"                                                        
                    Margin="20, 10, 20, 10"

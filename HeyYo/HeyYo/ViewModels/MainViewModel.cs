@@ -29,7 +29,7 @@ namespace HeyYo.ViewModels
             }
         }
 
-        public string _registerLabelText;
+        private string _registerLabelText;
 
         public string RegisterLabelText
         {
@@ -40,7 +40,7 @@ namespace HeyYo.ViewModels
             }
         }
 
-        public string _registerButtonText;
+        private string _registerButtonText;
 
         public string RegisterButtonText
         {
@@ -51,7 +51,7 @@ namespace HeyYo.ViewModels
             }
         }
 
-        public string _loginLabelText;
+        private string _loginLabelText;
 
         public string LoginLabelText
         {
@@ -73,6 +73,17 @@ namespace HeyYo.ViewModels
             }
         }
 
+        private bool _titleShouldAnimate = false;
+
+        public bool TitleShouldAnimate
+        {
+            get => _titleShouldAnimate;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _titleShouldAnimate, value);
+            }
+        }
+
         public string UrlPathSegment => "Main Page";
 
         public IScreen HostScreen { get; private set; }
@@ -80,6 +91,9 @@ namespace HeyYo.ViewModels
         public ICommand GoToRegisterCommand { get; set; }
 
         public ICommand GoToLoginCommand { get; set; }
+
+        // NOTE: This command is made only for testing, should be removed later
+        public ICommand TestCommand { get; set; }
 
         public MainViewModel(IScreen screen = null)
         {
@@ -96,6 +110,8 @@ namespace HeyYo.ViewModels
             {
                 return HostScreen.Router.Navigate.Execute(new LoginViewModel());
             });
+
+            TestCommand = ReactiveCommand.Create(() => TitleShouldAnimate = true);
         }
 
         private void InitiateViewText()
