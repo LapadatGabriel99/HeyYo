@@ -41,6 +41,28 @@ namespace HeyYo.ViewModels
             }
         }
 
+        private string _formUsernamePlaceholderText;
+
+        public string FormUsernamePlaceholderText
+        {
+            get => _formUsernamePlaceholderText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _formUsernamePlaceholderText, value);
+            }
+        }
+
+        private string _formPasswordPlaceholderText;
+
+        public string FormPasswordPlaceholderText
+        {
+            get => _formPasswordPlaceholderText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _formPasswordPlaceholderText, value);
+            }
+        }
+
         public string UrlPathSegment => "Login View";
 
         public IScreen HostScreen { get; private set; }
@@ -66,6 +88,10 @@ namespace HeyYo.ViewModels
             FormButtonText = TextNormalization.LoginPageHeader;
 
             FormLabelText = TextNormalization.LoginPageFormLabel;
+
+            FormUsernamePlaceholderText = TextNormalization.FormUsernamePlaceholder;
+
+            FormPasswordPlaceholderText = TextNormalization.FormPasswordPlaceholder;
         }
     }
 }

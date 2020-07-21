@@ -33,25 +33,25 @@
                                 VerticalScrollBarVisibility="Always"
                                 >
                         <StackLayout>
-                            <Entry Placeholder="Username" 
+                            <Entry Placeholder="{Binding FormUsernamePlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
                                    />
 
-                            <Entry Placeholder="Email" 
+                            <Entry Placeholder="{Binding FormEmailPlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
                                    />
 
-                            <Entry Placeholder="Password"
+                            <Entry Placeholder="{Binding FormPasswordPlaceholderText}"
                                    IsPassword="True"
                                    Style="{StaticResource FormInputEntry}"
                                    />
 
-                            <Entry Placeholder="Confirm Password" 
+                            <Entry Placeholder="{Binding FormConfirmPasswordPlaceholderText}" 
                                    IsPassword="True"
                                    Style="{StaticResource FormInputEntry}"
                                    />
 
-                            <Entry Placeholder="Phone" 
+                            <Entry Placeholder="{Binding FormPhonePlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
                                    />
                         </StackLayout>

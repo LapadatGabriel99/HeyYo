@@ -18,10 +18,20 @@
 
         public const string LoginPageHeader = "Sign In";        
 
-        public const string LoginPageFormLabel = "Or, create a free account...";   
+        public const string LoginPageFormLabel = "Or, create a free account...";           
 
         public const string RegisterPageHeader = "Sign Up";
 
         public const string RegisterPageFormLabel = "Or, I already have an account...";
+
+        public const string FormUsernamePlaceholder = "Username";
+
+        public const string FormPasswordPlaceholder = "Password";
+
+        public const string FormEmailPlaceholder = "Email";
+
+        public const string FormConfirmPasswordPlaceholder = "Confirm Password";
+
+        public const string FormPhonePlaceholder = "Phone";
     }
 }

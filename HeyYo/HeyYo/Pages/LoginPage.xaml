@@ -28,11 +28,11 @@
 
             <Frame Style="{StaticResource FormInputFrame}">
                 <StackLayout>
-                    <Entry Placeholder="Username" 
+                    <Entry Placeholder="{Binding FormUsernamePlaceholderText}" 
                            Style="{StaticResource FormInputEntry}"
                            />
-                    
-                    <Entry Placeholder="Password"
+
+                    <Entry Placeholder="{Binding FormPasswordPlaceholderText}"
                            IsPassword="True"
                            Style="{StaticResource FormInputEntry}"
                            />
