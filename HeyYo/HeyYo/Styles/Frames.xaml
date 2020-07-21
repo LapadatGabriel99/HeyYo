@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d"
+                    >
+    <!-- Form Input Frame -->
+    <Style x:Key="FormInputFrame" TargetType="{x:Type Frame}">
+        <Setter Property="HasShadow" Value="True"/>
+        <Setter Property="BorderColor" Value="AliceBlue"/>
+        <Setter Property="Margin" Value="15, 10, 15, 10"/>
+        <Setter Property="CornerRadius" Value="10"/>
+    </Style>
+</ResourceDictionary>
