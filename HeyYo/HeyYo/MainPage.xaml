@@ -29,48 +29,43 @@
         <StackLayout Grid.Row="1"
                      VerticalOptions="Center"
                      >
-
             <Label Text="{Binding Title, Mode=OneWay}"                                      
-                   Margin="10, 10, 50, 50"                  
+                   Margin="10, -20, 50, 20"                  
                    Style="{StaticResource PageHeaderTitle}"
                    FontFamily="{StaticResource QuicksandSemiBold}"
                    x:Name="Title"
                    Opacity="0"
                    attachedProperty:AnimateTitleProperty.Value="{Binding TitleShouldAnimate}"/>
 
-            <Label Text="Let's begin..."
-                   FontSize="{StaticResource FontSizeXXLarge}"
-                   TextColor="DodgerBlue"
-                   Margin="10, 10, 30, 50"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   Style="{StaticResource BaseStyleLabel}"
-                   FontFamily="{StaticResource QuicksandMedium}">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding TestCommand}"/>
-                </Label.GestureRecognizers>
-            </Label>
+            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue"
+                   CornerRadius="10">
+                <StackLayout>
+                    <Label Text="{Binding RegisterLabelText}"                                                        
+                           Margin="20, 10, 20, 10"
+                           Style="{StaticResource FormInputLabel}"
+                           />
 
-            <Label Text="{Binding RegisterLabelText}"                                                        
-                   Margin="20, 10, 20, 10"
-                   Style="{StaticResource FormInputLabel}"
-                   />
+                    <Button Text="{Binding RegisterButtonText}" Command="{Binding GoToRegisterCommand}"                
+                            Margin="50, 10, 50, 10"
+                            VerticalOptions="Center"
+                            />
+                </StackLayout>
+            </Frame>
 
-            <Button Text="{Binding RegisterButtonText}" Command="{Binding GoToRegisterCommand}"                
-                    Margin="50, 10, 50, 50"
-                    VerticalOptions="Center"
-                    />
+            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue"
+                   CornerRadius="10">
+                <StackLayout>
+                    <Label Text="{Binding LoginLabelText}"                   
+                           Margin="20, 10, 20, 10"
+                           Style="{StaticResource FormInputLabel}"
+                           />
 
-            <Label Text="{Binding LoginLabelText}"                   
-                   Margin="20, 10, 20, 10"
-                   Style="{StaticResource FormInputLabel}"
-                   />
-
-            <Button Text="{Binding LoginButtonText}" Command="{Binding GoToLoginCommand}"                
-                    Margin="50, 10, 50, 50"
-                    VerticalOptions="Center"                
-                    />
-
+                    <Button Text="{Binding LoginButtonText}" Command="{Binding GoToLoginCommand}"                
+                            Margin="50, 10, 50, 10"
+                            VerticalOptions="Center"                
+                            />
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </Grid>
 </reactiveui:ReactiveContentPage>

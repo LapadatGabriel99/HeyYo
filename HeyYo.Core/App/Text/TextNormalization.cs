@@ -10,11 +10,11 @@
 
         public const string MainPageRegisterButton = "Register";
 
-        public const string MainPageLoginButton = "Register";
+        public const string MainPageLoginButton = "Login";
 
         public const string MainPageRegisterLabel = "Create a free account...";
 
-        public const string MainPageLoginLabel = "Or, I already have an account...";
+        public const string MainPageLoginLabel = "Or, go to sign in...";
 
         public const string LoginPageHeader = "Sign In";        
 
@@ -22,6 +22,6 @@
 
         public const string RegisterPageHeader = "Sign Up";
 
-        public const string RegisterPageFormLabel = "Or, go to sign in...";
+        public const string RegisterPageFormLabel = "Or, I already have an account...";
     }
 }
