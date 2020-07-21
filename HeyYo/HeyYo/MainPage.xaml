@@ -37,8 +37,7 @@
                    Opacity="0"
                    attachedProperty:AnimateTitleProperty.Value="{Binding TitleShouldAnimate}"/>
 
-            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue"
-                   CornerRadius="10">
+            <Frame Style="{StaticResource FormInputFrame}">
                 <StackLayout>
                     <Label Text="{Binding RegisterLabelText}"                                                        
                            Margin="20, 10, 20, 10"
@@ -52,8 +51,7 @@
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue"
-                   CornerRadius="10">
+            <Frame Style="{StaticResource FormInputFrame}">
                 <StackLayout>
                     <Label Text="{Binding LoginLabelText}"                   
                            Margin="20, 10, 20, 10"

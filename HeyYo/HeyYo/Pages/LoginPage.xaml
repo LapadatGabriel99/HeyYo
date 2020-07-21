@@ -26,8 +26,7 @@
 
         <StackLayout Grid.Row="1" Margin="0, 50, 0, 0">
 
-            <Frame HasShadow="True" Margin="15, 10, 15, 10" BorderColor="AliceBlue"
-                   CornerRadius="10">
+            <Frame Style="{StaticResource FormInputFrame}">
                 <StackLayout>
                     <Entry Placeholder="Username" TextColor="Black" 
                            Margin="5, 5, 5, 15"
