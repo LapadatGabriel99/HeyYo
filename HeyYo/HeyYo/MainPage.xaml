@@ -47,7 +47,7 @@
                     <Button Text="{Binding RegisterButtonText}" Command="{Binding GoToRegisterCommand}"                
                             Margin="50, 10, 50, 10"
                             VerticalOptions="Center"
-                            />
+                            Style="{StaticResource RegularButton}"/>
                 </StackLayout>
             </Frame>
 
@@ -61,7 +61,7 @@
                     <Button Text="{Binding LoginButtonText}" Command="{Binding GoToLoginCommand}"                
                             Margin="50, 10, 50, 10"
                             VerticalOptions="Center"                
-                            />
+                            Style="{StaticResource RegularButton}"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

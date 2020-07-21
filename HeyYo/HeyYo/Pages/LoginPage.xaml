@@ -24,26 +24,23 @@
                    Style="{StaticResource PageHeaderLabel}"/>
         </Frame>
 
-        <StackLayout Grid.Row="1" Margin="0, 50, 0, 0">
+        <StackLayout Grid.Row="1" Margin="0, 30, 0, 0">
 
             <Frame Style="{StaticResource FormInputFrame}">
                 <StackLayout>
-                    <Entry Placeholder="Username" TextColor="Black" 
-                           Margin="5, 5, 5, 15"
-                           FontSize="{StaticResource FontSizeLarge}"
-                           FontFamily="{StaticResource QuicksandMedium}"/>
-                    <Entry Placeholder="Password" TextColor="Black"
+                    <Entry Placeholder="Username" 
+                           Style="{StaticResource FormInputEntry}"
+                           />
+                    
+                    <Entry Placeholder="Password"
                            IsPassword="True"
-                           Margin="5, 5, 5, 15"
-                           FontSize="{StaticResource FontSizeLarge}"
-                           FontFamily="{StaticResource QuicksandMedium}"/>
+                           Style="{StaticResource FormInputEntry}"
+                           />
 
-                    <Button CornerRadius="10" Text="{Binding FormButtonText}"
-                            BackgroundColor="DodgerBlue"
-                            TextColor="GhostWhite"
-                            Margin="15, 40, 15, 5"
-                            FontSize="Medium"
-                            Style="{StaticResource BaseStyleButton}"/>
+                    <Button Text="{Binding FormButtonText}"                            
+                            Margin="15, 20, 15, 5"                            
+                            Style="{StaticResource FormInputButton}"
+                            />
                 </StackLayout>
             </Frame>
             

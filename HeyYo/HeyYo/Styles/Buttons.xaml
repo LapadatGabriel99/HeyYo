@@ -6,11 +6,16 @@
                     mc:Ignorable="d"
                     >
     <!-- Regular Button -->
-    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyleButton}">
+    <Style x:Key ="RegularButton" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyleButton}">
         <Setter Property="FontSize" Value="{StaticResource FontSizeXLarge}"/>
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="BackgroundColor" Value="{StaticResource HeyYoMainDarkBlue}"/>
         <Setter Property="TextColor" Value="{StaticResource HeyYoMainWhite}"/>
         <Setter Property="Margin" Value="0, 10"/>
+    </Style>
+    
+    <!-- Form Input Button -->
+    <Style x:Key="FormInputButton" TargetType="{x:Type Button}" BasedOn="{StaticResource RegularButton}">
+        
     </Style>
 </ResourceDictionary>

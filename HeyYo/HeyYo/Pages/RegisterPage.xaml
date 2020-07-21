@@ -24,35 +24,49 @@
                    Style="{StaticResource PageHeaderLabel}"/>
         </Frame>
 
-        <StackLayout Grid.Row="1" Margin="0, 50, 0, 0">
+        <StackLayout Grid.Row="1" Margin="0, 30, 0, 0">
 
             <Frame Style="{StaticResource FormInputFrame}">
                 <StackLayout>
-                    <Entry Placeholder="Username" TextColor="Black" 
-                           Margin="5, 5, 5, 15"
-                           FontSize="{StaticResource FontSizeLarge}"
-                           FontFamily="{StaticResource QuicksandMedium}"
-                           />
-                    <Entry Placeholder="Password" TextColor="Black"
-                           IsPassword="True"
-                           Margin="5, 5, 5, 15"
-                           FontSize="{StaticResource FontSizeLarge}"
-                           FontFamily="{StaticResource QuicksandMedium}"
-                           />
 
-                    <Button CornerRadius="10" Text="{Binding FormButtonText}"
-                            BackgroundColor="DodgerBlue"
-                            TextColor="GhostWhite"
-                            Margin="15, 40, 15, 5"
-                            FontSize="Medium"
-                            Style="{StaticResource BaseStyleButton}"/>
+                    <ScrollView Orientation="Vertical"
+                                VerticalScrollBarVisibility="Always"
+                                >
+                        <StackLayout>
+                            <Entry Placeholder="Username" 
+                                   Style="{StaticResource FormInputEntry}"
+                                   />
+
+                            <Entry Placeholder="Email" 
+                                   Style="{StaticResource FormInputEntry}"
+                                   />
+
+                            <Entry Placeholder="Password"
+                                   IsPassword="True"
+                                   Style="{StaticResource FormInputEntry}"
+                                   />
+
+                            <Entry Placeholder="Confirm Password" 
+                                   IsPassword="True"
+                                   Style="{StaticResource FormInputEntry}"
+                                   />
+
+                            <Entry Placeholder="Phone" 
+                                   Style="{StaticResource FormInputEntry}"
+                                   />
+                        </StackLayout>
+                    </ScrollView>
+
+                    <Button Text="{Binding FormButtonText}"                            
+                            Margin="15, 20, 15, 5"
+                            Style="{StaticResource FormInputButton}"/>
 
                 </StackLayout>
             </Frame>
         </StackLayout>
 
         <Label  Text="{Binding FormLabelText}"                
-                Margin="20, 0, 20, 150" Grid.Row="2"
+                Margin="20, 0, 20, 20" Grid.Row="2"
                 Style="{StaticResource FormInputLabel}">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding GoToLoginCommand}"/>
