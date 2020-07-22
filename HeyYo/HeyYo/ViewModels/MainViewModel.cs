@@ -1,4 +1,4 @@
-﻿using HeyYo.Core.App.Text;
+﻿using HeyYo.Core.App.Text.Client;
 using ReactiveUI;
 using Splat;
 using System.Windows.Input;

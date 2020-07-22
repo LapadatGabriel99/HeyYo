@@ -1,4 +1,4 @@
-﻿namespace HeyYo.Core.App.Text
+﻿namespace HeyYo.Core.App.Text.Client
 {
     public static class TextNormalization
     {

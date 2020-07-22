@@ -1,11 +1,14 @@
-﻿using HeyYo.Core.App.Text;
+﻿using HeyYo.Core.App.Text.Client;
 using ReactiveUI;
 using Splat;
 using System.Windows.Input;
+using ReactiveUI.Validation.Abstractions;
+using ReactiveUI.Validation.Contexts;
+using ReactiveUI.Validation.Extensions;
 
 namespace HeyYo.ViewModels
 {
-    public class LoginViewModel : ReactiveObject, IRoutableViewModel
+    public class LoginViewModel : ReactiveObject, IRoutableViewModel, IValidatableViewModel
     {
         private string _header;
 
@@ -63,11 +66,35 @@ namespace HeyYo.ViewModels
             }
         }
 
+        private string _username;
+
+        public string Username
+        {
+            get => _username;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _username, value);
+            }
+        }
+
+        private string _password;
+
+        public string Password
+        {
+            get => _password;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _password, value);
+            }
+        }
+
         public string UrlPathSegment => "Login View";
 
         public IScreen HostScreen { get; private set; }
 
         public ICommand GoToRegisterCommand { get; set; }
+
+        public ValidationContext ValidationContext => new ValidationContext();
 
         public LoginViewModel(IScreen screen = null)
         {
@@ -79,6 +106,16 @@ namespace HeyYo.ViewModels
             {
                 return HostScreen.Router.Navigate.Execute(new RegisterViewModel());
             });
+
+            this.ValidationRule(viewModel => viewModel.Username,
+                                property => string.IsNullOrEmpty(property) || string.IsNullOrWhiteSpace(property),
+                                TextValidation.UsernameValidationMessage);
+
+            this.ValidationRule(viewModel => viewModel.Password,
+                                property => string.IsNullOrWhiteSpace(property) || string.IsNullOrWhiteSpace(property),
+                                TextValidation.PasswordValidationMessage);
+
+            var isValid =  this.IsValid();
         }
 
         private void InitiateViewText()
