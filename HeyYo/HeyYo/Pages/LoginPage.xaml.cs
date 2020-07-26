@@ -1,4 +1,5 @@
 ﻿using HeyYo.ViewModels;
+using ReactiveUI;
 using ReactiveUI.XamForms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace HeyYo.Pages
         {
             BindingContext = ViewModel;
 
-            InitializeComponent();
+            InitializeComponent();            
         }
     }
 }

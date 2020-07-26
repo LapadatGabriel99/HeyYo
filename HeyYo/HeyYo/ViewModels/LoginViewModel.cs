@@ -1,14 +1,16 @@
-﻿using HeyYo.Core.App.Text.Client;
+﻿using DynamicData.Binding;
+using HeyYo.Core.App.String;
+using HeyYo.Core.App.Text.Client;
 using ReactiveUI;
 using Splat;
+using System.Net.Http.Headers;
+using System.Reactive.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
-using ReactiveUI.Validation.Abstractions;
-using ReactiveUI.Validation.Contexts;
-using ReactiveUI.Validation.Extensions;
 
 namespace HeyYo.ViewModels
 {
-    public class LoginViewModel : ReactiveObject, IRoutableViewModel, IValidatableViewModel
+    public class LoginViewModel : ReactiveObject, IRoutableViewModel
     {
         private string _header;
 
@@ -88,13 +90,58 @@ namespace HeyYo.ViewModels
             }
         }
 
+        private readonly ObservableAsPropertyHelper<bool> _isUsernameValid;
+
+        public bool IsUsernameValid => _isUsernameValid.Value;
+
+        private readonly ObservableAsPropertyHelper<bool> _isPasswordValid;
+
+        public bool IsPasswordValid => _isPasswordValid.Value;
+
+        private string _usernameValidationText;
+
+        public string UsernameValidationText
+        {
+            get => _usernameValidationText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _usernameValidationText, value);
+            }
+        }
+
+        private string _passwordValidationText;
+
+        public string PasswordValidationText
+        {
+            get => _passwordValidationText;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _passwordValidationText, value);
+            }
+        }
+
+        private bool _isUsernameFirstTime = true;
+
+        private bool _isPasswordFirstTime = true;
+
+        private bool _canExecuteSubmit;
+
+        public bool CanExecuteSubmit
+        {
+            get => _canExecuteSubmit;
+            set
+            {
+                this.RaisePropertyChanged(nameof(CanExecuteSubmit));
+            }
+        }
+
         public string UrlPathSegment => "Login View";
 
         public IScreen HostScreen { get; private set; }
 
         public ICommand GoToRegisterCommand { get; set; }
 
-        public ValidationContext ValidationContext => new ValidationContext();
+        public ICommand SubmitCommand { get; set; }
 
         public LoginViewModel(IScreen screen = null)
         {
@@ -107,15 +154,65 @@ namespace HeyYo.ViewModels
                 return HostScreen.Router.Navigate.Execute(new RegisterViewModel());
             });
 
-            this.ValidationRule(viewModel => viewModel.Username,
-                                property => string.IsNullOrEmpty(property) || string.IsNullOrWhiteSpace(property),
-                                TextValidation.UsernameValidationMessage);
+            var canExecuteSubmit = this.WhenValueChanged(viewModel => viewModel.CanExecuteSubmit)
+                                    .Select(value =>
+                                    {
+                                        if (Username.IsNullOrEmpty() || Username.IsNullOrWhiteSpace() ||
+                                            Password.IsNullOrWhiteSpace() || Password.IsNullOrEmpty())
+                                        {
+                                            return false;
+                                        }
 
-            this.ValidationRule(viewModel => viewModel.Password,
-                                property => string.IsNullOrWhiteSpace(property) || string.IsNullOrWhiteSpace(property),
-                                TextValidation.PasswordValidationMessage);
+                                        return true;
+                                    });
 
-            var isValid =  this.IsValid();
+            SubmitCommand = ReactiveCommand.CreateFromTask(Submit, canExecuteSubmit);
+
+            this.WhenValueChanged(viewModel => viewModel.Username)
+                .Select(username =>
+                {
+                    if (_isUsernameFirstTime)
+                    {                        
+                        _isUsernameFirstTime = false;
+
+                        return false;
+                    }
+
+                    if (username.IsNullOrEmpty() || username.IsNullOrWhiteSpace())
+                    {
+                        UsernameValidationText = TextValidation.UsernameValidationMessage;
+
+                        return true;
+                    }
+
+                    CanExecuteSubmit = IsUsernameValid && IsPasswordValid;
+
+                    return false;
+                })
+                .ToProperty(this, viewModel => viewModel.IsUsernameValid, out _isUsernameValid);
+
+            this.WhenValueChanged(viewModel => viewModel.Password)
+                .Select(password =>
+                {
+                    if (_isPasswordFirstTime)
+                    {
+                        _isPasswordFirstTime = false;
+
+                        return false;
+                    }
+
+                    if (password.IsNullOrWhiteSpace() || password.IsNullOrEmpty())
+                    {
+                        PasswordValidationText = TextValidation.PasswordValidationMessage;
+
+                        return true;
+                    }
+
+                    CanExecuteSubmit = IsUsernameValid && IsPasswordValid;
+
+                    return false;
+                })
+                .ToProperty(this, viewModel => viewModel.IsPasswordValid, out _isPasswordValid);
         }
 
         private void InitiateViewText()
@@ -129,6 +226,17 @@ namespace HeyYo.ViewModels
             FormUsernamePlaceholderText = TextNormalization.FormUsernamePlaceholder;
 
             FormPasswordPlaceholderText = TextNormalization.FormPasswordPlaceholder;
+        }
+
+        private async Task Submit()
+        {
+            CanExecuteSubmit = false;
+
+            await Task.Delay(5000);
+
+            CanExecuteSubmit = true;
+
+            // TODO add client service that consumes an api that calls endpoint on the web            
         }
     }
 }

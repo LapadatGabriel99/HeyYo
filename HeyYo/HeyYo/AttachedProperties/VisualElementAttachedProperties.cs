@@ -1,5 +1,5 @@
 ﻿using HeyYo.AttachedProperties.Base;
-using HeyYo.Core.App.Text;
+using HeyYo.Core.App.Text.Client;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
