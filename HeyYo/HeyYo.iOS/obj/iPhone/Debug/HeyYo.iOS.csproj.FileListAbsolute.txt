@@ -71,3 +71,5 @@ C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo.iOS\obj
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo.iOS\obj\iPhone\Debug\HeyYo.iOS.csproj.CopyComplete
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo.iOS\obj\iPhone\Debug\HeyYo.iOS.exe
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo.iOS\obj\iPhone\Debug\HeyYo.iOS.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo.iOS\bin\iPhone\Debug\HeyYo.Core.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo\HeyYo.iOS\bin\iPhone\Debug\HeyYo.Core.pdb

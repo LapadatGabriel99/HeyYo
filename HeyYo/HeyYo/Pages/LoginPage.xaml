@@ -31,32 +31,25 @@
 
                     <ScrollView Orientation="Vertical"
                                 VerticalScrollBarVisibility="Always"
-                                Visual="Material">
-
+                                >
                         <StackLayout>
 
                             <Entry Placeholder="{Binding FormUsernamePlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
                                    Text="{Binding Username}"/>
 
-                            <Label x:Name="usernameValidation"
-                                   Margin="10, 0, 5, 0"
-                                   Text="{Binding UsernameValidationText}"
+                            <Label Text="{Binding UsernameValidationText}"
                                    IsVisible="{Binding IsUsernameValid}"
-                                   TextColor="Red"
-                                   FontFamily="{StaticResource QuicksandLight}"/>
+                                   Style="{StaticResource ValidationMessageLabel}"/>
 
                             <Entry Placeholder="{Binding FormPasswordPlaceholderText}"
                                    IsPassword="True"
                                    Style="{StaticResource FormInputEntry}"
                                    Text="{Binding Password}"/>
 
-                            <Label x:Name="passwordValidation"
-                                   Margin="10, 0, 5, 0"
-                                   Text="{Binding PasswordValidationText}"
+                            <Label Text="{Binding PasswordValidationText}"
                                    IsVisible="{Binding IsPasswordValid}"
-                                   TextColor="Red"
-                                   FontFamily="{StaticResource QuicksandLight}"/>
+                                   Style="{StaticResource ValidationMessageLabel}"/>
 
                         </StackLayout>
                         

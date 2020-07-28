@@ -43,4 +43,11 @@
         <Setter Property="FontFamily" Value="{StaticResource QuicksandMedium}"/>
     </Style>
     
+    <!-- Validation Message Label -->
+    <Style x:Key="ValidationMessageLabel" TargetType="{x:Type Label}">
+        <Setter Property="Margin" Value="10, 0, 5, 0"/>
+        <Setter Property="TextColor" Value="Red"/>
+        <Setter Property="FontFamily" Value="{StaticResource QuicksandLight}"/>
+    </Style>
+    
 </ResourceDictionary>

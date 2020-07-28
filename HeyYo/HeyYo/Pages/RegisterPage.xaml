@@ -35,31 +35,52 @@
                         <StackLayout>
                             <Entry Placeholder="{Binding FormUsernamePlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
-                                   />
+                                   Text="{Binding Username}"/>
+
+                            <Label Text="{Binding UsernameValidationText}"
+                                   IsVisible="{Binding IsUsernameValid}"
+                                   Style="{StaticResource ValidationMessageLabel}"/>
 
                             <Entry Placeholder="{Binding FormEmailPlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
-                                   />
+                                   Text="{Binding Email}"/>
+
+                            <Label Text="{Binding EmailValidationText}"
+                                   IsVisible="{Binding IsEmailValid}"
+                                   Style="{StaticResource ValidationMessageLabel}"/>
 
                             <Entry Placeholder="{Binding FormPasswordPlaceholderText}"
                                    IsPassword="True"
                                    Style="{StaticResource FormInputEntry}"
-                                   />
+                                   Text="{Binding Password}"/>
+
+                            <Label Text="{Binding PasswordValidationText}"
+                                   IsVisible="{Binding IsPasswordValid}"
+                                   Style="{StaticResource ValidationMessageLabel}"/>
 
                             <Entry Placeholder="{Binding FormConfirmPasswordPlaceholderText}" 
                                    IsPassword="True"
                                    Style="{StaticResource FormInputEntry}"
-                                   />
+                                   Text="{Binding ConfirmPassword}"/>
+
+                            <Label Text="{Binding ConfirmPasswordValidationText}"
+                                   IsVisible="{Binding IsConfirmPasswordValid}"
+                                   Style="{StaticResource ValidationMessageLabel}"/>
 
                             <Entry Placeholder="{Binding FormPhonePlaceholderText}" 
                                    Style="{StaticResource FormInputEntry}"
-                                   />
+                                   Text="{Binding Phone}"/>
+
+                            <Label Text="{Binding PhoneValidationText}"
+                                   IsVisible="{Binding IsPhoneValid}"
+                                   Style="{StaticResource ValidationMessageLabel}"/>
                         </StackLayout>
                     </ScrollView>
 
                     <Button Text="{Binding FormButtonText}"                            
                             Margin="15, 20, 15, 5"
-                            Style="{StaticResource FormInputButton}"/>
+                            Style="{StaticResource FormInputButton}"
+                            Command="{Binding SubmitCommand}"/>
 
                 </StackLayout>
             </Frame>
