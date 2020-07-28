@@ -1,5 +1,7 @@
+using HeyYo.Web.BusinessLogic.Extensions;
 using HeyYo.Web.DataAccess.Context;
 using HeyYo.Web.DataAccess.Models;
+using HeyYo.Web.Repository.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -61,7 +63,10 @@ namespace HeyYo.Web.Server
 
                 options.SignIn.RequireConfirmedEmail = true;
                 options.SignIn.RequireConfirmedPhoneNumber = true;
-            });            
+            });
+
+            services.AddHeyYoRepositories()
+                .AddHeyYoServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
