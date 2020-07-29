@@ -15,6 +15,7 @@ using FluentValidation.AspNetCore;
 using FluentValidation;
 using Newtonsoft.Json.Serialization;
 using System.Reflection;
+using HeyYo.Web.Server.Middleware.Filters;
 
 namespace HeyYo.Web.Server
 {
@@ -72,6 +73,11 @@ namespace HeyYo.Web.Server
             services.AddHeyYoRepositories()
                 .AddHeyYoServices();
             
+            services.AddMvc(options =>
+            {
+                options.Filters.Add<ValidationFilter>();
+            });
+
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         }
 

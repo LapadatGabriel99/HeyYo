@@ -17,9 +17,5 @@
     <ProjectReference Include="..\HeyYo.Web.Repository\HeyYo.Web.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Middleware\Filters\" />
-  </ItemGroup>
-
 
 </Project>
