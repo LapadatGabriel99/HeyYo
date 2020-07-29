@@ -11,6 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using Newtonsoft.Json.Serialization;
+using System.Reflection;
 
 namespace HeyYo.Web.Server
 {
@@ -67,6 +71,8 @@ namespace HeyYo.Web.Server
 
             services.AddHeyYoRepositories()
                 .AddHeyYoServices();
+            
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
