@@ -68,5 +68,5 @@ C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\bi
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\obj\Debug\netcoreapp3.1\HeyYo.Web.Server.csproj.CoreCompileInputs.cache
-C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\obj\Debug\netcoreapp3.1\HeyYo.Web.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\bin\Debug\netcoreapp3.1\HeyYo.Core.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Projects\HeyYo\HeyYo.Web.Server\bin\Debug\netcoreapp3.1\HeyYo.Core.pdb

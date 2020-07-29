@@ -30,7 +30,7 @@ namespace HeyYo.Web.Server.Controllers
         
         [HttpPost]
         [Route("/register")]
-        public async Task<IActionResult> RegisterUser([FromBody] RegisterApiModel model)
+        public async Task<IActionResult> RegisterUser([FromBody] RegisterApi model)
         {
             var result = await _userManager.CreateAsync(new ApplicationUser
             {

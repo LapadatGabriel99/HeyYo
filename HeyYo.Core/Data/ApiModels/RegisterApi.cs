@@ -1,6 +1,6 @@
 ﻿namespace HeyYo.Core.Data.ApiModels
 {
-    public class RegisterApiModel
+    public class RegisterApi
     {         
         public string Username { get; set; }
 
