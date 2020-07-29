@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyYo.Web.DataAccess", "HeyYo.Web.DataAccess\HeyYo.Web.DataAccess.csproj", "{A030DF51-F97B-4118-B589-06B4A1848AC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyYo.Web.DataAccess", "HeyYo.Web.DataAccess\HeyYo.Web.DataAccess.csproj", "{A030DF51-F97B-4118-B589-06B4A1848AC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyYo.Web.Repository", "HeyYo.Web.Repository\HeyYo.Web.Repository.csproj", "{26C4C668-26B5-40A7-AD50-450E76397D8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyYo.Web.Repository", "HeyYo.Web.Repository\HeyYo.Web.Repository.csproj", "{26C4C668-26B5-40A7-AD50-450E76397D8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyYo.Web.BusinessLogic", "HeyYo.Web.BusinessLogic\HeyYo.Web.BusinessLogic.csproj", "{CB444091-C7EA-4B50-B619-A0D0DC76A93D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyYo.Web.BusinessLogic", "HeyYo.Web.BusinessLogic\HeyYo.Web.BusinessLogic.csproj", "{CB444091-C7EA-4B50-B619-A0D0DC76A93D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyYo.Web.Server", "HeyYo.Web.Server\HeyYo.Web.Server.csproj", "{A3F8298A-5320-40C3-BD8C-03116E92F276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyYo.Web.Server", "HeyYo.Web.Server\HeyYo.Web.Server.csproj", "{A3F8298A-5320-40C3-BD8C-03116E92F276}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyYo.Core", "HeyYo.Core\HeyYo.Core.csproj", "{EB3E6F40-DA9D-40B5-BC77-53B180FC91C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A3F8298A-5320-40C3-BD8C-03116E92F276}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3F8298A-5320-40C3-BD8C-03116E92F276}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3F8298A-5320-40C3-BD8C-03116E92F276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3E6F40-DA9D-40B5-BC77-53B180FC91C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3E6F40-DA9D-40B5-BC77-53B180FC91C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3E6F40-DA9D-40B5-BC77-53B180FC91C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3E6F40-DA9D-40B5-BC77-53B180FC91C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

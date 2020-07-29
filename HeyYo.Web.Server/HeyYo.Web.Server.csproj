@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HeyYo.Core\HeyYo.Core.csproj" />
     <ProjectReference Include="..\HeyYo.Web.BusinessLogic\HeyYo.Web.BusinessLogic.csproj" />
     <ProjectReference Include="..\HeyYo.Web.DataAccess\HeyYo.Web.DataAccess.csproj" />
     <ProjectReference Include="..\HeyYo.Web.Repository\HeyYo.Web.Repository.csproj" />
