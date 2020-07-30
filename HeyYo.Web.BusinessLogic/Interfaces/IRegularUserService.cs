@@ -5,6 +5,6 @@ namespace HeyYo.Web.BusinessLogic.Interfaces
 {
     public interface IRegularUserService
     {
-        Task CreateRegularUserAsync(RegularUser regularUser);
+        Task<bool> CreateRegularUserAsync(RegularUser regularUser);
     }
 }

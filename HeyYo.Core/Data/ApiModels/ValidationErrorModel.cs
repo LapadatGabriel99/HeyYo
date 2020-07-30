@@ -1,6 +1,6 @@
 ﻿namespace HeyYo.Core.Data.ApiModels
 {
-    public class ErrorModel
+    public class ValidationErrorModel
     {
         public string FieldName { get; set;}
 

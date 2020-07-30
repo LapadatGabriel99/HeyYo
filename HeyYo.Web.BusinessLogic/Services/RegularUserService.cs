@@ -14,9 +14,9 @@ namespace HeyYo.Web.BusinessLogic.Services
             _regularUserRepository = regularUserRepository;
         }
 
-        public async Task CreateRegularUserAsync(RegularUser regularUser)
+        public async Task<bool> CreateRegularUserAsync(RegularUser regularUser)
         {
-            throw new System.NotImplementedException();
+            return await _regularUserRepository.AddRegularUser(regularUser);
         }
     }
 }

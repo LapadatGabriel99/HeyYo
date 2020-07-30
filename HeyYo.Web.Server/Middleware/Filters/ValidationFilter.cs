@@ -16,13 +16,13 @@ namespace HeyYo.Web.Server.Middleware.Filters
                     .Where(x => x.Value.Errors.Count > 0)
                     .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(x => x.ErrorMessage)).ToArray();
 
-                var errorResponse = new ErrorResponse();
+                var errorResponse = new ValidationErrorResponse();
 
                 foreach (var error in errors)
                 {
                     foreach (var item in error.Value)
                     {
-                        errorResponse.Errors.Add(new ErrorModel
+                        errorResponse.Errors.Add(new ValidationErrorModel
                         {
                             FieldName = error.Key,
                             Message = item
